@@ -1,0 +1,22 @@
+/* Mantém o visual MKO; estilos adicionais do painel administrativo */
+.admin-modal{width:min(760px,calc(100vw - 28px));max-height:88vh;overflow:auto}
+.admin-form{display:flex;flex-direction:column;gap:12px;margin-top:14px}
+.admin-form p{color:#aeb7c7;font-size:13px;line-height:1.5;margin:0 0 4px}
+.admin-form label{display:flex;flex-direction:column;gap:6px;color:#dfe5ef;font-size:12px;font-weight:700}
+.admin-form input,.admin-form select,.admin-form textarea{width:100%;box-sizing:border-box;border:1px solid #353b49;border-radius:8px;background:#0c0e14;color:#f3f5f8;padding:10px 11px;font:inherit;font-weight:400;outline:none}
+.admin-form input:focus,.admin-form select:focus,.admin-form textarea:focus{border-color:#d5a43b}
+.admin-form fieldset{border:1px solid #353b49;border-radius:9px;padding:10px}
+.admin-form legend{padding:0 6px;color:#e3b74e;font-size:12px;font-weight:800}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.admin-submit{display:flex;align-items:center;justify-content:center;gap:8px;background:#a91f2c;color:#fff;border:1px solid #d84b57;border-radius:8px;padding:11px 14px;font-weight:800;cursor:pointer}
+.admin-submit:disabled{opacity:.6;cursor:wait}
+.admin-session{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:12px 0;padding:10px;background:#171a22;border-radius:8px;color:#cbd2df;font-size:12px}
+.admin-session button,.admin-tabs button{display:flex;align-items:center;gap:6px;border:1px solid #343a46;border-radius:7px;background:#11141b;color:#e6eaf1;padding:8px 10px;cursor:pointer}
+.admin-tabs{display:flex;gap:8px;margin:12px 0}
+.admin-tabs button.active{border-color:#c69b3b;color:#f3c95d;background:#241d10}
+.game-checks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;max-height:170px;overflow:auto}
+.admin-form .game-checks label{display:flex;flex-direction:row;align-items:flex-start;gap:8px;font-weight:500;line-height:1.35}
+.admin-form .game-checks input{width:auto;margin:2px 0 0;accent-color:#d5a43b}
+.admin-message{margin:12px 0 0;padding:10px;border-radius:8px;background:#142a20;color:#a8f0c4;font-size:13px}
+.admin-message.error{background:#32171c;color:#ffb9c1}
+@media(max-width:560px){.form-grid{grid-template-columns:1fr}.game-checks{grid-template-columns:1fr}.admin-session{align-items:flex-start;flex-direction:column}}
